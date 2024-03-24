@@ -1,0 +1,212 @@
+/*Kirtan Patel 8945453*/
+
+html{
+   
+    font-style : normal;
+    font-variant: small-caps;
+    font-weight : lighter;
+    font-size : 20px;
+    line-height: .5em;
+    font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+    font : normal normal normal 20px/1.5 Times, "Times New Roman", Georgia, serif;
+   
+
+    /* color : blue; Set text color to blue */
+}
+body{
+    width : 100%; /*% relative to parent element*/
+    max-width : 1300px; /*absolute units px*/
+    margin : auto; /*margin set to auto for right and left center elemnts inside their parent*/
+    padding : 0.25rem; /*rem releative to root element font size*/
+    text-align: center;
+}
+
+p{
+    color : red;
+    font-size : 12px;
+}
+/*h1 element selector*/
+h1{
+    color : green;
+}
+
+/*class selector*/
+.headings{
+    color : green;
+    align-self: center;
+}
+
+/*multiple selector*/
+video{
+    width : 50%;
+    height : 50%;
+    border: 1rem;
+    border : .25rem solid rgb(15, 117, 8);       
+    border-radius : 1rem; 
+    color :  rgb(51, 9, 34);
+    box-shadow : .25rem .25rem .25rem black;
+}
+
+/*named colour*/
+
+p{
+    color : black;
+}
+/*Child combinator selector*/
+section > p{
+
+    font-variant: small-caps;
+}
+/*Descendant combinator selector*/
+footer  p{
+
+    font-size : 0.75rem;
+}
+/*Adjacent sibling slector*/
+h2 + p {
+
+    font-style: italic;
+}
+/*General sibling selector*/
+h2 ~ p{
+
+    color :rgb(66, 12, 66);
+}
+/*Multiple Elements and Selectors*/
+h1, h2, .headings{
+    font-variant : small-caps;
+}
+/*Multiple Elements and Selectors*/
+header, footer{
+    background-image: linear-gradient(rgb(229, 150, 60) 50%, rgb(90, 184, 46));
+    margin : .25rem;
+    padding : .25rem;
+   
+}
+.main-section{
+
+    background-color: hsla(31, 80%, 56%, 0.6);
+}
+
+.main-section-figure img{
+
+    width : 80%; /*set width to 80% of the parent element*/
+    height : 80%; /*set height to 80% of the parent element*/
+     
+    border-radius: 1.5rem;   /*relevative to the root units*/ 
+    padding : 1rem; /*sets padding useing units relevative to the root units*/
+}
+#absolute-path-image{
+
+    background-color: rgb(229, 150, 60); /*applies background colour*/
+     /*border shorthand property width, style colour */ 
+    border : .25rem solid rgb(221, 119, 3); /*relevative to the root units*/
+      /*rounds the corners of the border
+    border-radius*/
+    border-radius : 1rem; 
+    color : rgb(229, 150, 60); /*applies background colour*/
+}
+
+
+
+
+
+#quote{
+ /*border shorthand property width, style colour */
+    border : 1rem solid green;
+    /* Specify a horizontal and a vertical shadow colour*/
+    box-shadow : .25rem .25rem .25rem black;
+    #relative-path-image{
+
+        background-color: hsla(291, 13%, 58%, 0.6);        /*applies background colour*/
+        border : .25rem solid rgb(245, 145, 205);         /*border shorthand property width, style colour */ 
+                                                           /*rounds the corners of the borderborder-radius*/
+                                                                
+        border-radius : 1rem; 
+        color :  rgb(51, 9, 34);
+    }}
+
+aside ul{
+    list-style-type: square;
+    list-style-type: circle;
+    list-style-type: disc;
+    list-style-type: none;
+}
+aside ol{
+    list-style-type: lower-alpha;
+    list-style-type: upper-alpha;
+    list-style-type: lower-roman;
+}
+nav {
+    background-color: rgb(229, 150, 60);
+    padding : .25rem;
+    margin : .25rem;
+}
+nav ul{
+    text-align: center;
+    list-style-type: none;
+    padding: 0 1rem 2rem 1rem ;
+    margin : 0.25rem;
+}
+nav ul li a{
+    background-color: rgb(239, 188, 144);
+    border: 0.1rem solid rgb(19, 103, 3);
+    display : block;
+    text-decoration: none;
+    color: rgb(0, 128, 15);
+    font-weight: bold;
+    font-variant: small-caps;
+}
+nav ul li a:hover{
+    background-color: purple;
+    border-color: white; 
+    color: white;
+}
+#home-link{
+    float : left;
+    width : 50%;
+
+}
+#contact-link{
+    float : right;
+    width : 50%;
+}
+
+main{
+    clear : both;
+    margin : .25rem;
+    padding : .25rem;
+    float : left;
+    width : 65%;
+}
+aside{
+    margin : .25rem;
+    float : right;
+    padding : .25rem;
+    width : 25%;
+}
+footer{
+    clear : both;
+}
+#bio{
+    float : left;
+    width : 45%;
+}
+
+#relative-path-image{
+    float : right;
+    width : 35%;
+    background-color:rgb(229, 150, 60); /*applies background colour*/
+    border : .1rem solid rgb(3, 129, 3); /*border shorthand property width, style colour */ 
+     /*rounds the corners of the border
+    border-radius*/
+    border-radius : 1rem; 
+    color :  rgb(51, 9, 34);
+}
+.main-section{
+    clear: both;
+}
+table, th, td{
+    border : .25rem solid black;
+}

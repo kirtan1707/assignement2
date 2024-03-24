@@ -1,0 +1,183 @@
+<!-- Kirtan Patel 8945453  -->
+<!--Section 1 -->
+<!--this is the document type declaration-->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="south africa,south,africa,html,css,web development,beginner,learning,novice,student">
+   
+    <meta name="description" content="This is a site geared to people wanting to lean HTML & CSS.">
+     
+    <style>
+        p {
+            color : blue;/* Set text color to blue */
+            text-align: left;
+            
+        }
+
+    </style>
+    <!--link css files. CSS will be applied from top to bottom-->
+    <link rel="stylesheet" href="css/normalize2.css">
+    <link rel="stylesheet" href="css/styles2.css">
+    <!--This is embedded css applied after the external css-->
+      <style>
+        /*h1 element selector*/
+        h1{
+            color : pink; /* Set text color to pink */
+        }
+   </style>
+
+    
+    <title>Sardar Vallabhbhai Patel</title>
+</head>
+
+<body>
+    
+    <header>
+         
+        <h1 id="header-heading" class="headings">Sardar Vallabhbhai Patel</h1>
+    </header>
+    <nav>
+        <ul>
+            <li id="home-link"><a href="assignment2.html">Home</a></li>
+            <li id="contact-link"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!--this is the semantic main element that defines the body's main-->
+    <main style="background-color: rgb(231, 193, 132); text-align: left;">
+       <h2>Contact</h2>
+       <form name="contact_form" id="contact_form" method="post" action="contact.php" >
+            <div>
+                <input type="hidden" name="userid" value="1234">
+                <input type="hidden" name="honeypot" value="">
+            </div>
+            
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div>
+                    <label for="Firstname">First Name</label>
+                    <input type="text" name="Firstname" id="Firstname" placeholder="Enter your first name" autofocus autocomplete="off" required>
+                </div>
+                <div>
+                    <label for="Lastname">Last Name</label>
+                    <input type="text" name="Lastname" id="Lastname" required >
+                </div>
+                <fieldset id="gender_radio">
+                    <legend>What is your gender?</legend>
+                    <input type="radio" name="gender" id="male" value="male" required >
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="other" value="other">
+                    <label for="other">Other</label>
+                   
+                </fieldset>
+            </fieldset>
+            <div>
+                
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" ><br>
+                
+                <label for="phone">Phone</label><br>
+                <input type="tel" name="phone" id="phone"><br>
+                <label for="Prefered mehod of contact">Prefered method of contact</label><br>
+                <input type="text" name="Prefered method of contact" id="Prefered method of contact"><br>
+               
+                <label for="dob">What is your date of birth</label><br>
+                <input type="date" name="dob" id="dob" min="2000-01-01" max="2024-03-14"><br>
+              
+            </div>
+          
+            
+            <div>
+                <label for="Message">Message</label><br>
+                <textarea name="Message" id="Message" rows="10" cols="50"></textarea>
+            </div>
+           
+          
+            <div>
+                <label for="robot">I am not a robot</label>
+                <input type="checkbox" name="robot" id="robot" value="true"><br>
+                <input type="reset" id="clear" name="clear" value="Clear Form">
+                <button type="submit" name="bt1" id="bt1">Submit</button>
+                <button type="reset" name="bt2" id="bt2">Reset</button>
+
+            </div>
+   
+         
+          
+           
+
+       </form>
+      
+
+    </main>
+    <aside style="background-color:rgb(226, 170, 107)">
+        <h3>FAQ's</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Info</th>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Born</td>
+                    <td>31 October 1875</td>
+                    
+                </tr>
+                <tr>
+                    <td>Died</td>
+                    <td>15 December 1950</td>
+                   
+                </tr>
+                <tr>
+                    <td>Political party</td>
+                    <td><a href="https://en.wikipedia.org/wiki/Indian_National_Congress">Indian National Congress</a></td>
+                    
+                    
+                </tr>
+                <tr>
+                    <td>Profession</td>
+                    <td>Barrister, activist, freedom fighter</td>
+                   
+                </tr>
+            </tbody>
+            
+        </table>
+        <h3>Resources</h3>
+        <ul>
+            
+
+    <a href="https://en.wikipedia.org/wiki/Vallabhbhai_Patel">wikipedia</a><br>
+    <a href="https://www.britannica.com/biography/Vallabhbhai-Patel">britannica</a><br>
+    <a href="https://www.culturalindia.net/leaders/sardar-vallabhbhai-patel.html">culturalindia</a>
+            
+        </ul>
+       
+       
+    </aside>
+
+
+    <!--this is the semantic footer element that defines the body's footer-->    
+<footer>
+        <!--this is character entity - special character-->      
+        <p style="color: black;">&copy;<i><i>Kirtan Patel 2024</i></i> </p>
+        <p style = "color: black;">&#169;<i><i>Kirtan Patel 2024</i></i> </p>
+
+</footer>
+
+
+
+</body>
+</html>
